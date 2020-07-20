@@ -1,0 +1,23 @@
+body{
+  background-color: black;
+}
+.App {
+  text-align: center;
+  margin: auto;
+  background-color: rgb(61, 214, 0);
+  background-image: url(https://image.freepik.com/free-vector/golden-fencing-red-carpet-with-rise-stage_158677-50.jpg);
+  width: 60%;
+}
+.maindiv{
+  display: block;
+  text-align: center;
+  align-items: center;
+  margin:auto;
+}
+.App li{
+  display: inline-flex;
+  padding: 30px;
+}
+.App li:hover {
+cursor: pointer;
+}

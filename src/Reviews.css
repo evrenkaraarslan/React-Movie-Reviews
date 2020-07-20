@@ -1,0 +1,12 @@
+.flexbox-container{
+    display:flex;
+    justify-content: center;
+    background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/gray/GBF7OJDLONP53LE2YVHHLVDFQ4.jpg);
+}
+.flexbox-item{
+    width: 650px;
+    margin: 10px;
+    border: 3px solid orange;
+    background-color: white;
+    border-radius: 2em;
+}
