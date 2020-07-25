@@ -3,7 +3,7 @@ import './App.css';
 import Reviews from './Reviews';
 
 export default function App() {
-  const APP_KEY="YOU SHOULD PUT YOUR API KEY HERE"
+  const APP_KEY=""
 
   const [reviews, setReviews]=useState([])
   const [search, setSearch]=useState(" ");
@@ -38,10 +38,11 @@ export default function App() {
       </form>
       <div style={{backgroundColor:'white'}}>
       {reviews.map(review=>(
-        <Reviews key={review.link.url} title={review.link.url} movies={review.display_title} short={review.summary_short} pub={review.publication_date} /> 
+        review.multimedia==null ? <Reviews key={review.link.url} title={review.link.url} movies={review.display_title} short={review.summary_short} pub={review.publication_date} /> :
+        <Reviews key={review.link.url} title={review.link.url} movies={review.display_title} short={review.summary_short} pub={review.publication_date} imm={review.multimedia.src}/> 
       ))}
+
       </div>
     </div>
   );
 }
-
