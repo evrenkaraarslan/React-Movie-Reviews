@@ -1,13 +1,14 @@
 .flexbox-container{
     display:flex;
     justify-content: center;
-    background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/gray/GBF7OJDLONP53LE2YVHHLVDFQ4.jpg);
+    /*background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/gray/GBF7OJDLONP53LE2YVHHLVDFQ4.jpg);*/
+    background-image: url(https://cdn3.vectorstock.com/i/1000x1000/28/72/red-burgundy-background-with-rose-petals-vector-18882872.jpg);
 }
 .flexbox-item{
-    width: 650px;
+    width: 500px;
     margin: 10px;
     border: 3px solid orange;
-    background-color: white;
+    background-color:white;
     border-radius: 2em;
 }
 
@@ -34,24 +35,22 @@
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
   }
+  .flip-card-front img{
+    width: 100%;
+  }
   
   .flip-card-front {
     color: black;
   }
     .flip-card-back {
     border-radius: 2em;
-    background-color: dodgerblue;
+    background-color: black;
     color: white;
     transform: rotateY(180deg);
   }
 
-@media screen and (min-width: 600px) {
+  @media screen and (min-width: 400px) {
     .flexbox-item img {
-      width: 500px;
-    }
-  }
-@media screen and (min-width: 500px) {
-    .flexbox-item img {
-      width: 400px;
+      max-width: 300px;
     }
   }
